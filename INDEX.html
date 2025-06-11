@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LAYA PERFUMES</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+  <nav class="navbar">
+    <figure class="logo">
+      <video autoplay muted loop class="logo-video">
+        <source src="video/LOGOZ-negate.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+
+      <a href="#" class="logo">
+        <h1 class="logo-text">LAYA PERFUMES</h1>
+      </a>
+
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Search..." />
+        <a href="#" class="search-icon" id="searchButton">
+          <h3 class="fas fa-search" id="search-icon" >UNCOVER</h3>
+          <div id="suggestions" class="suggestions"></div>
+        </a>
+      </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+
+    <!-- Products Dropdown Container -->
+    <li class="dropdown-container">
+        <a href="javascript:void(0);" id="productLink" onclick="toggleDropdown()">Products</a>
+        <ul id="categoryDropdown" class="dropdown">
+            <li><a href="#laya-perfumes">Laya Perfume</a></li>
+            <li><a href="#mens-perfumes">Men's Perfume</a></li>
+            <li><a href="#womens-perfumes">Women's Perfume</a></li>
+            <li><a href="#unisex-perfumes">Unisex Perfume</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <section class="image-slider">
+    <div class="slider-container">
+      <div class="slide active">
+        <img src="images/menss perf.png" alt="Men's Perfume" />
+      </div>
+      <div class="slide">
+        <img src="images/womens perf.png" alt="Women's Perfume" />
+      </div>
+      <div class="slide">
+        <img src="images/unisex perf.png" alt="Unisex Perfume" />
+      </div>
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <main>
+    <section class="hero">
+      <video autoplay muted loop>
+        <source src="video/vecteezy_blank-luxury-perfume-bottle-on-a-black-background-beside_49989374.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-text">
+        <h2>A Symphony of Elegance and Identity</h2>
+        <p>Discover signature scents that define your individuality.</p>
+      </div>
+    </section>
+
+    <section id="overview" class="overview">
+      <h2>Overview</h2>
+      <p>Laya Perfumes is more than a fragrance brand — it’s an experience that evokes emotion, elegance, and individuality...</p>
+    </section>
+
+    <section id="laya-perfumes" class="products">
+        <h2>--------- Laya Perfumes ---------</h2>
+        <div class="slider-container">
+            <div class="slider" id="laya-slider">
+                <div class="product">
+                    <img src="images/COMING SOON.jpg" alt="????" />
+                    <h3>COMING SOON</h3>
+                    <p>????</p>
+                    <p><strong>???? pesos</strong></p>
+                </div>
+                <div class="product">
+                    <img src="images/COMING SOON.jpg" alt="????" />
+                    <h3>COMING SOON</h3>
+                    <p>????</p>
+                    <p><strong>???? pesos</strong></p>
+                </div>
+                <div class="product">
+                    <img src="images/COMING SOON.jpg" alt="????" />
+                    <h3>COMING SOON</h3>
+                    <p>????</p>
+                    <p><strong>???? pesos</strong></p>
+                </div>
+                <div class="product">
+                    <img src="images/COMING SOON.jpg" alt="????" />
+                    <h3>COMING SOON</h3>
+                    <p>????</p>
+                    <p><strong>???? pesos</strong></p>
+                </div>
+                <div class="product">
+                    <img src="images/COMING SOON.jpg" alt="????" />
+                    <h3>COMING SOON</h3>
+                    <p>????</p>
+                    <p><strong>???? pesos</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mens-perfumes" class="products">
+      <h2>--------- Men's Perfumes ---------</h2>
+      <div class="slider-container">
+        <button class="nav left" onclick="scrollSlider('mens', 'left')">&#10094;</button>
+        <div class="slider" id="mens-slider">
+          <div class="product">
+            <img src="MEN/AQUA 1.jpg" alt="Giorgio Armani Acqua Di Giò" />
+            <h3>Giorgio Armani Acqua Di Giò EDP 125ml</h3>
+            <p>Rich oud with deep woody undertones.</p>
+            <p><strong>1,800 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Giorgio Armani Acqua Di Giò', 1800)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/BLEU 2.jpg" alt="Chanel Bleu de Chanel" />
+            <h3>Chanel Bleu de Chanel EDP 100ml</h3>
+            <p>Fresh citrus blend with a touch of musk.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Chanel Bleu de Chanel', 1600)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/CREED 1.webp" alt="Creed Aventus" />
+            <h3>Creed Aventus EDP 100ml</h3>
+            <p>Dark tobacco with spicy vanilla notes.</p>
+            <p><strong>1,700 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Creed Aventus', 1700)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/DIOR 2.jpg" alt="Christian Dior Sauvage" />
+            <h3>Christian Dior Sauvage EDP 100ml</h3>
+            <p>Fresh citrus blend with a touch of musk.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Christian Dior Sauvage', 1600)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/EROS 2.webp" alt="Versace Eros" />
+            <h3>Versace Eros EDP 100ml</h3>
+            <p>Dark tobacco with spicy vanilla notes.</p>
+            <p><strong>1,700 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Versace Eros', 1700)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/FLAME 1.webp" alt="Versace Eros Flame" />
+            <h3>Versace Eros Flame EDP 100ml</h3>
+            <p>Fresh citrus blend with a touch of musk.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Versace Eros Flame', 1600)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/LACOSTE 2.jpg" alt="Lacoste L.12.12 Noir Black" />
+            <h3>Lacoste L.12.12 Noir Black EDT 100ml</h3>
+            <p>Dark tobacco with spicy vanilla notes.</p>
+            <p><strong>1,700 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Lacoste L.12.12 Noir Black', 1700)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/MALE 1.webp" alt="Jean Paul Gaultier Ultra Mâle" />
+            <h3>Jean Paul Gaultier Ultra Mâle EDT 125ml</h3>
+            <p>Fresh citrus blend with a touch of musk.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Jean Paul Gaultier Ultra Mâle', 1600)">ADD TO BASKET</span>
+          </div>
+        </div>
+        <button class="nav right" onclick="scrollSlider('mens', 'right')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="womens-perfumes" class="products">
+      <h2>--------- Women's Perfumes ---------</h2>
+      <div class="slider-container">
+        <button class="nav left" onclick="scrollSlider('womens', 'left')">&#10094;</button>
+        <div class="slider" id="womens-slider">
+          <div class="product">
+            <img src="WOMEN/BELLE 1.jpg" alt="La Vie Est Belle by Lancome" />
+            <h3>La Vie Est Belle by Lancome EDP 100ml</h3>
+            <p>Floral and fresh, perfect for daily wear.</p>
+            <p><strong>1,500 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('La Vie Est Belle by Lancome', 1500)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/BOMB 1.webp" alt="Victorias Secret Bombshell" />
+            <h3>Victoria's Secret Bombshell EDP 100ml</h3>
+            <p>Warm amber base with hints of vanilla.</p>
+            <p><strong>1,500 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Victorias Secret Bombshell', 1500)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/CHAN 2.jpg" alt="CHANEL No 5 Paris" />
+            <h3>CHANEL No 5 Paris EDP 100ml</h3>
+            <p>Delicate floral bouquet with a fruity twist.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('CHANEL No 5 Paris', 1600)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/COOL 2.avif" alt="Davidoff Cool Water Reborn" />
+            <h3>Davidoff Cool Water Reborn EDP 100ml</h3>
+            <p>Warm amber base with hints of vanilla.</p>
+            <p><strong>1,500 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Davidoff Cool Water Reborn', 1500)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/ETERNITY 2.jpg" alt="Calvin Klein Eternity" />
+            <h3>Calvin Klein Eternity EDP 100ml</h3>
+            <p>Delicate floral bouquet with a fruity twist.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Calvin Klein Eternity', 1600)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/JADORE 1.jpg" alt="Christian Dior J adore" />
+            <h3>Christian Dior J'adore EDP 100ml</h3>
+            <p>Warm amber base with hints of vanilla.</p>
+            <p><strong>1,500 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Christian Dior J adore', 1500)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/MALONE 2.webp" alt="Jo Malone Peony & Blush Suede" />
+            <h3>Jo Malone Peony & Blush Suede Cologne 100ml</h3>
+            <p>Delicate floral bouquet with a fruity twist.</p>
+            <p><strong>1,600 pesos</strong></p>
+            <span class="add-to-basket" onclick="addToCart('Jo Malone Peony & Blush Suede', 1600)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="WOMEN/SHAL 1.webp" alt="GUERLAIN Shalimar" />
+            <h3>GUERLAIN Shalimar EDP 90ml</h3>
+            <p>Warm amber base with hints of vanilla.</p>
+            <p><strong>1,500 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('GUERLAIN Shalimar', 1500)">ADD TO BASKET</span>
+          </div>
+        </div>
+        <button class="nav right" onclick="scrollSlider('womens', 'right')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="unisex-perfumes" class="products">
+      <h2>--------- Unisex Perfumes ---------</h2>
+      <div class="slider-container">
+        <button class="nav left" onclick="scrollSlider('unisex', 'left')">&#10094;</button>
+        <div class="slider" id="unisex-slider">
+          <div class="product">
+            <img src="UNISEX/BAMB 2.jpg" alt="Gucci Bamboo" />
+            <h3>Gucci Bamboo EDP 75ml</h3>
+            <p>Aquatic and refreshing for all.</p>
+            <p><strong>1,500 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Gucci Bamboo', 1500)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="UNISEX/BLACK 1.jpg" alt="Yves Saint Laurent Black Opium" />
+            <h3>Yves Saint Laurent Black Opium EDP 90ml</h3>
+            <p>Balanced notes of citrus and warm spices.</p>
+            <p><strong>1,650 pesos</strong></p>
+            <span class="add-to-basket" onclick="addToCart('Yves Saint Laurent Black Opium', 1650)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="UNISEX/GUCCI 2.jpg" alt="Gucci Intense Oud" />
+            <h3>Gucci Intense Oud EDP 90ml</h3>
+            <p>Soft and elegant musky tone.</p>
+            <p><strong>1,700 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Gucci Intense Oud', 1700)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="UNISEX/POLO 1.jpg" alt="Ralph Lauren Polo Blue" />
+            <h3>Ralph Lauren Polo Blue EDP 125ml</h3>
+            <p>Soft and elegant musky tone.</p>
+            <p><strong>1,700 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Ralph Lauren Polo Blue', 1700)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="UNISEX/TOM 2.webp" alt="Tom Ford Black Orchid" />
+            <h3>Tom Ford Black Orchid EDP 100ml</h3>
+            <p>Soft and elegant musky tone.</p>
+            <p><strong>1,700 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Tom Ford Black Orchid', 1700)">ADD TO BASKET</span>
+          </div>
+          <div class="product">
+            <img src="MEN/BLEU 2.jpg" alt="Chanel Bleu de Chanel" />
+            <h3>Chanel Bleu de Chanel EDP 100ml</h3>
+            <p>Fresh citrus blend with a touch of musk.</p>
+            <p><strong>1,600 pesos</strong></p><br><br>
+            <span class="add-to-basket" onclick="addToCart('Chanel Bleu de Chanel', 1600)">ADD TO BASKET</span>
+          </div>
+        </div>
+        <button class="nav right" onclick="scrollSlider('unisex', 'right')">&#10095;</button>
+      </div>
+    </section>
+
+
+<div class="overlay" id="overlay"></div>
+
+<button class="buy-now-button" onclick="toggleCartPanel()">🛒 Your Basket</button>
+
+<div class="cart-panel" id="cartPanel">
+    <h3>YOUR BASKET</h3><br>
+    <ul id="cartList"></ul><br><br>
+    <p id="totalPrice">Total: 0 pesos</p>
+    <button class="close-cart" onclick="toggleCartPanel()">❌</button>
+
+   <h4 class="delivery-details-title">Delivery Details</h4>
+
+<form onsubmit="placeOrder(event)" class="delivery-form">
+  <div class="form-group">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="address">Your Address:</label>
+    <input type="text" id="address" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" required>
+  </div>
+
+  <button type="submit">Place Order</button>
+</form>
+</div>
+
+<div
+    <section id="reviews" class="reviews">
+      <h2>Customer Reviews</h2>
+      <blockquote>“Amber Nights is heavenly. I get compliments every day!” – <strong>Isabelle R.</strong></blockquote>
+      <blockquote>“I wear Ocean Spirit every time I travel – it's invigorating.” – <strong>Marco P.</strong></blockquote>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p><i>LAYA PERFUMES</i> was founded in <i>2020</i> with the goal of creating unique, long-lasting fragrances that inspire confidence and individuality. Our commitment is to provide only original, high-quality perfumes sourced from trusted suppliers. Every scent is carefully selected to ensure authenticity and excellence, so you can shop with confidence knowing you are getting genuine products. We value your trust and strive to deliver an engaging, seamless experience—making <i>LAYA PERFUMES</i> your reliable destination for signature scents.</p>
+    </section>
+
+    <div class="info-row">
+     <div class="info-box">
+        <img src="images/SUPPORT.png" alt="Support Icon">
+        <p><strong>Top-Notch Support</strong></p>
+        <p>Customer Service Monday to Friday 9am to 5pm</p>
+    </div> 
+    <div class="info-box">
+        <img src="images/SHIPPING.png" alt="Shipping Icon">
+        <p><strong>Fast & Free Shipping</strong></p>
+        <p>Free shipping on orders over ₱5,000.</p>
+        <p>Metro Manila: 3-7 days</p>
+        <p>Provincial: 4-10 days</p>
+    </div>
+        <div class="info-box">
+        <img src="images/COD.png" alt="COD Icon">
+        <p><strong>COD Payments</strong></p>
+        <p>Pay on delivery for your convenience.</p>
+    </div>
+ </div>
+</div>
+
+
+<section id="contact" class="contact">
+    <div class="contact-row">
+        <!-- Contact Details -->
+        <div class="contact-box">
+
+            <p>Email: <a href="mailto:info@layaperfumes.com">info@layaperfumes.com</a></p>
+            <p>Phone: +63 912 345 6789</p>
+            <p>Follow us on Instagram: <a href="https://instagram.com" target="_blank">@layaperfumes</a></p>
+        </div>
+
+        <!-- Middle Row with Logos -->
+        <div class="contact-box"  id="logos">
+          <h2>Contact Us</h2>
+          <a href="https://www.fda.gov.ph/" target="_blank" rel="noopener">
+            <img src="images/FDA-Web-Logo-small.png" alt="FDA Logo"style="width:100px; height:auto;">
+          </a>
+          <a href="https://www.gov.ph/" target="_blank" rel="noopener">
+            <img src="images/ph.png" alt="Philippine Flag"style="width:100px; height:auto;">
+          </a>
+          <a href="https://www.nbi.gov.ph/" target="_blank" rel="noopener">
+            <img src="images/logo.png" alt="NBI Logo" style="width:50px; height:auto;">
+          </a>
+        </div>
+
+        <!-- Last Row with Shopping Platforms -->
+        <div class="contact-box" id="shopping-links">
+          <a href="https://www.amazon.com/" target="_blank" rel="noopener">
+            <img src="images/Amazon.png" alt="Amazon">
+          </a>
+          <a href="https://www.lazada.com.ph/" target="_blank" rel="noopener">
+            <img src="images/lazada 2.png" alt="Lazada">
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+            <img src="images/tiktok.png" alt="TikTok">
+          <a href="https://shopee.ph/" target="_blank" rel="noopener">
+            <img src="images/shopee.png" alt="Shopee">
+          </a>
+          </a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+      <p>&copy; 2025 LAYA PERFUMES. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="SCRIPT 2.js"></script>
+
+</body>
+</html>
